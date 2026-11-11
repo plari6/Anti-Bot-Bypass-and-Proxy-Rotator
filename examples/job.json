@@ -1,0 +1,8 @@
+{
+  "options": { "concurrency": 4, "saveHtml": false },
+  "fields": ["title=h1", "price=.price", "image=img.main@src", "tags=.tag[]", "schema=@jsonld"],
+  "urls": [
+    "https://example.com/",
+    { "url": "https://example.org/", "mustContain": "Example", "render": false }
+  ]
+}

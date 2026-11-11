@@ -1,0 +1,14 @@
+services:
+  antibot:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      HOST: 0.0.0.0
+      PROXY_FILE: /app/proxies.txt
+    ports:
+      - "8787:8787"
+    volumes:
+      - ./proxies.txt:/app/proxies.txt:ro
+      - ./data:/app/data
+    shm_size: 512mb

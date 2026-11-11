@@ -1,0 +1,8 @@
+# One proxy per line. Tags are optional: type= country= cost= (USD/GB) id=
+# Cheap datacenter IPs (first ladder step)
+http://user:pass@203.0.113.10:8080 type=datacenter cost=0.5
+203.0.113.11:8080:user:pass type=datacenter cost=0.5
+# Rotating residential gateway: {session} = new exit IP per session, {country} = PROXY_COUNTRY / --country
+http://customer-USER-session-{session}-cc-{country}:PASS@gate.example-provider.com:7000 type=residential cost=4
+# Mobile (last resort, most trusted)
+http://user:pass@198.51.100.5:9000 type=mobile country=us cost=9

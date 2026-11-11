@@ -1,0 +1,5 @@
+[
+  { "id": "dc-fra-1", "url": "http://user:pass@203.0.113.10:8080", "type": "datacenter", "country": "de", "costPerGb": 0.5 },
+  { "id": "resi-gw", "url": "http://customer-USER-session-{session}:PASS@gate.example-provider.com:7000", "type": "residential", "costPerGb": 4 },
+  { "id": "mob-us", "url": "http://user:pass@198.51.100.5:9000", "type": "mobile", "country": "us", "costPerGb": 9 }
+]
